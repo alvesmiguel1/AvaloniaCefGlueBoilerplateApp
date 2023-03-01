@@ -3,4 +3,3 @@
 .git/**/*
 CefGlue.Avalonia.Boilerplate.App.Demo/bin/**/*
 CefGlue.Avalonia.Boilerplate.App.Demo/obj/**/*
-*.pdb
