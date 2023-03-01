@@ -5,7 +5,10 @@
     xmlns:System="clr-namespace:System;assembly=mscorlib"
     MinWidth="1080"
     MinHeight="600"
-    Title="ODC Studio">
+    ExtendClientAreaChromeHints="PreferSystemChrome"
+    ExtendClientAreaToDecorationsHint="True"
+    Title="CefGlue Avalonia Demo App"
+    Padding="2">
     
 
     <Grid>

@@ -99,7 +99,7 @@ namespace ServiceStudio.Presenter {
             // This is caused because 'SelectedTopLevelPresenter' interacts with view by changing the TabControl's currentIndex, what would trigger again a 'SelectedViewChanged';
             selectedTopLevelPresenter = aggregators
                 .Concat(new ITopLevelPresenter[] { serverPagePresenter })
-                .FirstOrDefault(t => t.View == topLevelView);
+                .FirstOrDefault(t => t != null && t.View == topLevelView);
 
             if (SelectedTabChanged != null) {
                 SelectedTabChanged();

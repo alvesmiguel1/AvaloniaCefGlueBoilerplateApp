@@ -1,6 +1,6 @@
 
-.idea/
-.git/
-
-CefGlue.Avalonia.Boilerplate.App.Demo/bin/
-CefGlue.Avalonia.Boilerplate.App.Demo/obj/
+.idea/**/*
+.git/**/*
+CefGlue.Avalonia.Boilerplate.App.Demo/bin/**/*
+CefGlue.Avalonia.Boilerplate.App.Demo/obj/**/*
+*.pdb
