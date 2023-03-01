@@ -1,5 +1,6 @@
 
 .idea/
+.git/
 
-CefGlue.Demo.Avalonia/bin/
-CefGlue.Demo.Avalonia/obj/
+CefGlue.Avalonia.Boilerplate.App.Demo/bin/
+CefGlue.Avalonia.Boilerplate.App.Demo/obj/
