@@ -19,7 +19,7 @@ namespace ServiceStudio.WebViewImplementation.Framework.Tooltip {
             private readonly PopupWindow popup;
 
             public CustomTooltip(IControl content) {
-                popup = new PopupWindow { ShowActivated = false, Content = content };
+                popup = new PopupWindow { ShowActivated = false, Content = "BAMZ" };
                 popup.VerticalContentAlignment = VerticalAlignment.Center;
                 popup.PointerEnter += delegate { Hide(); };
             }
