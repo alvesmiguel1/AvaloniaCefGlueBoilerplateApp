@@ -9,7 +9,7 @@
 
     <ItemGroup>
         <PackageVersion Include="Avalonia.Desktop" Version="0.10.999-cibuild0032542-beta" />
-        <PackageVersion Include="CefGlue.Avalonia" Version="116.5845.2" />
+        <PackageVersion Include="CefGlue.Avalonia" Version="106.5249.22" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Layout;
 using Avalonia.Markup.Xaml;
 using Avalonia.Platform;
 using Avalonia.VisualTree;
@@ -19,9 +20,35 @@ namespace ServiceStudio.WebViewImplementation {
             var btnStandalone = this.FindControl<Button>("btn-standalone");
             btnStandalone.Click += BtnStandaloneOnClick;
             
-            
+            var btnFakeTooltip = this.FindControl<Button>("btn-fake-tooltip");
+            btnFakeTooltip.Click += BtnFakeTooltipOnClick;
             
             TabHeader = tabHeaderInfo;
+        }
+
+        private void BtnFakeTooltipOnClick(object sender, RoutedEventArgs e)
+        {
+            var w = new Window
+            {
+                Width = 200, 
+                Height = 200,
+                Content = new TextBlock()
+                {
+                    Text = "Some text"
+                },
+                ShowActivated = false,
+                VerticalContentAlignment = VerticalAlignment.Center,
+                ShowInTaskbar = false,
+                SystemDecorations = SystemDecorations.BorderOnly,
+                SizeToContent = SizeToContent.WidthAndHeight,
+                CanResize = false,
+                ExtendClientAreaChromeHints = ExtendClientAreaChromeHints.NoChrome,
+                ExtendClientAreaToDecorationsHint = true,
+                ExtendClientAreaTitleBarHeightHint = -1,
+                Focusable = false
+            };
+
+            w.Show();
         }
 
         private void BtnStandaloneOnClick(object sender, RoutedEventArgs e)
